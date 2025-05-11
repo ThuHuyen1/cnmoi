@@ -28,6 +28,7 @@ $role = $_SESSION['role'];
                     <li><a href="safe_files.php">Xem file an toàn</a></li>
                 <?php else: ?>
                     <li><a href="log_files.php">Xem file nguy hiểm</a></li>
+                    <li><a href="yara_rules.php">Quản lý YARA Rules</a></li>
                 <?php endif; ?>
                 <li><a href="logout.php" class="btn btn-danger">Đăng xuất</a></li>
             </ul>
@@ -54,6 +55,10 @@ $role = $_SESSION['role'];
                         <tr>
                             <td><a href="log_files.php">Xem file nguy hiểm</a></td>
                             <td>Danh sách các file bị phát hiện chứa mã độc</td>
+                        </tr>
+                        <tr>
+                            <td><a href="yara_rules.php">Quản lý YARA Rules</a></td>
+                            <td>Thêm, xóa và quản lý các quy tắc phát hiện mã độc</td>
                         </tr>
                     <?php endif; ?>
                 </table>
